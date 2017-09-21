@@ -27,7 +27,14 @@ namespace GuipsSheet
 
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
-            value
+            if (numericUpDown1.Value > 30)
+            {
+                numericUpDown1.Value = 1;
+            }
+            if (numericUpDown1.Value == 0)
+            {
+                numericUpDown1.Value = 30;
+            }
         }
     }
 }
