@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.15
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuipsSheet", "GuipsSheet\GuipsSheet.csproj", "{D27BF575-A62B-47E4-BB2E-CE12CEB182A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GURPSSheetTest", "GURPSSheetTest\GURPSSheetTest.csproj", "{C556CECC-F3F9-4364-ACB4-5E7951E25B17}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +17,15 @@ Global
 		{D27BF575-A62B-47E4-BB2E-CE12CEB182A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D27BF575-A62B-47E4-BB2E-CE12CEB182A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D27BF575-A62B-47E4-BB2E-CE12CEB182A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C556CECC-F3F9-4364-ACB4-5E7951E25B17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C556CECC-F3F9-4364-ACB4-5E7951E25B17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C556CECC-F3F9-4364-ACB4-5E7951E25B17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C556CECC-F3F9-4364-ACB4-5E7951E25B17}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DC23E5E6-88FB-4551-A04F-68F3E93B8EDA}
 	EndGlobalSection
 EndGlobal

@@ -20,21 +20,55 @@ namespace GuipsSheet
 
         }
 
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        private void strengthUpDown_ValueChanged(object sender, EventArgs e)
         {
-            if (numericUpDown1.Value > 30)
+            strengthUpDown.Value = Wrap30((int)strengthUpDown.Value);
+        }
+
+        private void dexterityUpDown_ValueChanged(object sender, EventArgs e)
+        {
+           dexterityUpDown.Value = Wrap30((int)dexterityUpDown.Value);
+        }
+
+        private void intelligenceUpDown_ValueChanged(object sender, EventArgs e)
+        {
+            intelligenceUpDown.Value = Wrap30((int)intelligenceUpDown.Value);
+        }
+        private void healthUpDown_ValueChanged(object sender, EventArgs e)
+        {
+            healthUpDown.Value = Wrap30((int)healthUpDown.Value);
+        }
+
+        private int Wrap30(int attributeValue)
+        {
+            if (attributeValue > 30)
             {
-                numericUpDown1.Value = 1;
+                return 1;
             }
-            if (numericUpDown1.Value == 0)
+
+            if (attributeValue == 0)
             {
-                numericUpDown1.Value = 30;
+                return 30;
             }
+
+            return attributeValue;
+        }
+
+
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
