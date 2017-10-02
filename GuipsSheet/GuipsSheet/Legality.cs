@@ -1,26 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.IO;
 
 namespace GuipsSheet
 {
-    class Attributes
+    public class Legality
     {
-        public int Wrap30(int attributeValue)
+        public void SaveCharacter(Stream stream, string name)
         {
-            if (attributeValue > 30)
-            {
-                return 1;
-            }
-
-            if (attributeValue == 0)
-            {
-                return 30;
-            }
-
-            return attributeValue;
+            var writer = new StreamWriter(stream);
+            writer.Write(name);
+            writer.Flush();
         }
     }
 }

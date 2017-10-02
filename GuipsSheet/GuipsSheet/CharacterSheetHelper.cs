@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Windows.Forms;
+using System.IO;
 
 namespace GuipsSheet
 {
     public partial class CharacterSheetHelper : Form
     {
+        private Legality legality = new Legality();
+        
         public CharacterSheetHelper()
         {
             InitializeComponent();
@@ -19,17 +22,7 @@ namespace GuipsSheet
         {
 
         }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        
         private void strengthUpDown_ValueChanged(object sender, EventArgs e)
         {
             strengthUpDown.Value = Wrap30((int)strengthUpDown.Value);
@@ -69,6 +62,13 @@ namespace GuipsSheet
         private void label6_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void saveButton_Click(object sender, EventArgs e)
+        {
+            var name = nameInput.Text;
+            FileStream fileStream = new FileStream(name + ".txt", FileMode.Create);
+            legality.SaveCharacter(fileStream, name);
         }
     }
 }

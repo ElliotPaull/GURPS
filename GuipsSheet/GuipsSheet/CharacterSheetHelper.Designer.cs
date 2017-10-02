@@ -54,7 +54,7 @@
             this.saveButton.TabIndex = 0;
             this.saveButton.Text = "Save";
             this.saveButton.UseVisualStyleBackColor = true;
-            this.saveButton.Click += new System.EventHandler(this.button1_Click);
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
             // nameInput
             // 
@@ -170,7 +170,6 @@
             this.label5.Size = new System.Drawing.Size(121, 13);
             this.label5.TabIndex = 11;
             this.label5.Text = "Total attribute points: 50";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
