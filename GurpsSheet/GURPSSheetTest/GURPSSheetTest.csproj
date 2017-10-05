@@ -55,7 +55,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GuipsSheet\GurpsSheet.csproj">
+    <ProjectReference Include="..\GurpsSheet\GurpsSheet.csproj">
       <Project>{d27bf575-a62b-47e4-bb2e-ce12ceb182a0}</Project>
       <Name>GurpsSheet</Name>
     </ProjectReference>
