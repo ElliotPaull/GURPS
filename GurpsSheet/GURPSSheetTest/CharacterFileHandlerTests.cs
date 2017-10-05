@@ -5,7 +5,7 @@ using GuipsSheet;
 namespace GURPSSheetTest
 {
     [TestClass]
-    public class LegalityTests
+    public class CharacterFileHandlerTests
     {
         [TestMethod]
         public void saving_a_character_saves_its_name()
@@ -14,10 +14,10 @@ namespace GURPSSheetTest
             {
                 //given
                 var name = "merlin";
-                var legality = new Legality();
+                var handler = new CharacterFileHandler();
 
                 //when
-                legality.SaveCharacter(memoryStream, name);
+                handler.SaveCharacter(memoryStream, name);
 
                 //then
                 memoryStream.Position = 0;

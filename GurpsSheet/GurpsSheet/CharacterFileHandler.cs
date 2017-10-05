@@ -2,7 +2,7 @@
 
 namespace GuipsSheet
 {
-    public class Legality
+    public class CharacterFileHandler
     {
         public void SaveCharacter(Stream stream, string name)
         {
