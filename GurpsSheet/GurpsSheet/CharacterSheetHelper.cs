@@ -7,6 +7,7 @@ namespace GuipsSheet
     public partial class CharacterSheetHelper : Form
     {
         private Legality legality = new Legality();
+        string charactersDirectory = "Characters";
         
         public CharacterSheetHelper()
         {
@@ -67,8 +68,12 @@ namespace GuipsSheet
         private void saveButton_Click(object sender, EventArgs e)
         {
             var name = nameInput.Text;
-            FileStream fileStream = new FileStream(name + ".txt", FileMode.Create);
-            legality.SaveCharacter(fileStream, name);
+            if (!Directory.Exists(charactersDirectory))
+                Directory.CreateDirectory(charactersDirectory);
+            using (var fileStream = new FileStream(charactersDirectory + "/" + name + ".txt", FileMode.OpenOrCreate))
+            {
+                legality.SaveCharacter(fileStream, name);
+            }
         }
     }
 }
