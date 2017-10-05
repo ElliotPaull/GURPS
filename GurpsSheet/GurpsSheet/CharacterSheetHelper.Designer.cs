@@ -1,4 +1,4 @@
-﻿namespace GuipsSheet
+﻿namespace GurpsSheet
 {
     partial class CharacterSheetHelper
     {

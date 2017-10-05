@@ -1,8 +1,8 @@
 ﻿using System.IO;
 
-namespace GuipsSheet
+namespace GurpsSheet
 {
-    public class Legality
+    public class CharacterFileHandler
     {
         public void SaveCharacter(Stream stream, string name)
         {

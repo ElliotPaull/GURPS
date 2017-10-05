@@ -48,16 +48,16 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="LegalityTests.cs" />
+    <Compile Include="CharacterFileHandlerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GuipsSheet\GuipsSheet.csproj">
+    <ProjectReference Include="..\GurpsSheet\GurpsSheet.csproj">
       <Project>{d27bf575-a62b-47e4-bb2e-ce12ceb182a0}</Project>
-      <Name>GuipsSheet</Name>
+      <Name>GurpsSheet</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
