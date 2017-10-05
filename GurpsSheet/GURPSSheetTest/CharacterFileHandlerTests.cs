@@ -1,6 +1,6 @@
 ﻿using System.IO;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using GuipsSheet;
+using GurpsSheet;
 
 namespace GURPSSheetTest
 {

@@ -2,7 +2,7 @@
 using System.Windows.Forms;
 using System.IO;
 
-namespace GuipsSheet
+namespace GurpsSheet
 {
     public partial class CharacterSheetHelper : Form
     {

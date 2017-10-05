@@ -1,6 +1,6 @@
 ﻿using System.IO;
 
-namespace GuipsSheet
+namespace GurpsSheet
 {
     public class CharacterFileHandler
     {

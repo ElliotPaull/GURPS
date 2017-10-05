@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace GuipsSheet
+namespace GurpsSheet
 {
     static class Program
     {
